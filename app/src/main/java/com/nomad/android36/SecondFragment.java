@@ -44,11 +44,13 @@ public class SecondFragment extends Fragment implements OnClick{
 
     private void loadData() {
         music = new ArrayList<>();
-        music.add(new Music(1,"2:33","Kochevnik","Время первых"));
-        music.add(new Music(2,"3:22","Taylor Swift","Blank Space"));
-        music.add(new Music(3,"5:36","Silento","Watch Me"));
-        music.add(new Music(4,"3:50","The Weekend","The Hills"));
-        music.add(new Music(5,"1:26","Ramil","Levi's"));
+        music.add(new Music("1","2:33","Kochevnik","Время первых"));
+        music.add(new Music("2","3:22","Taylor Swift","Blank Space"));
+        music.add(new Music("3","5:36","Silento","Watch Me"));
+        music.add(new Music("4","3:50","The Weekend","The Hills"));
+        music.add(new Music("5","1:26","Ramil","Levi's"));
+        music.add(new Music("6","2:26","Xcho","Вороны"));
+
     }
 
     @Override
@@ -57,7 +59,7 @@ public class SecondFragment extends Fragment implements OnClick{
         Fragment fragment = new Fragment3();
         bundle.putString(key, music.getNameMusic());
         fragment.setArguments(bundle);
-        requireActivity().getSupportFragmentManager().beginTransaction().replace(R.id.container,
+        requireActivity().getSupportFragmentManager().beginTransaction().replace(R.id.container4,
                 fragment).addToBackStack("a").commit();
     }
 }

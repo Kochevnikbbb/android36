@@ -1,23 +1,23 @@
 package com.nomad.android36;
 
 public class Music {
-    private Integer count;
+    private String count;
     private String time;
     private String singer;
     private String nameMusic;
 
-    public Music(Integer count, String time, String singer, String nameMusic) {
+    public Music(String count, String time, String singer, String nameMusic) {
         this.count = count;
         this.time = time;
         this.singer = singer;
         this.nameMusic = nameMusic;
     }
 
-    public Integer getCount() {
+    public String getCount() {
         return count;
     }
 
-    public void setCount(Integer count) {
+    public void setCount(String count) {
         this.count = count;
     }
 
